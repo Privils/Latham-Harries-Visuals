@@ -45,7 +45,7 @@ const Header = () => {
                   <a
                     className="nav-link active text-white"
                     aria-current="page"
-                    href="/"
+                    href="/Latham-Harries-Visuals"
                   >
                     Home
                   </a>
