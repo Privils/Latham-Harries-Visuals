@@ -53,7 +53,7 @@ const Events = () => {
             <img
               src="https://static.wixstatic.com/media/933a77_2424479764854fd185f5a85c4c1fe573~mv2.jpg/v1/fill/w_206,h_470,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/933a77_2424479764854fd185f5a85c4c1fe573~mv2.jpg"
               alt=""
-              className="clubImages"
+              className="clubImages img-fluid"
               data-aos="zoom-in"
               data-aos-easing="ease-in"
               data-aos-duration="1000"
