@@ -127,23 +127,15 @@ const Sports = () => {
           </div>
         </div>
       </section>
-      <section className="videos">
-        <div className="container">
-          <p className="intro intro-videos">my videos</p>
-          <div className="row">
-            <div
-              className="col-sm-6"
-              data-aos="fade-in"
-              data-aos-easing="ease-in"
-              data-aos-duration="1000"
-            >
-              <Video videoUrl={videoUrl} />
-            </div>
-          </div>
+
+      <div className="container">
+      <div className="row">
+        <div className="col-sm-12">
+          <Video videoUrl={videoUrl} allowFullScreen className="Video" />
         </div>
-      </section>
+      </div>
+    </div>
     </>
   );
 };
-
 export default Sports;

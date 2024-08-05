@@ -2,6 +2,7 @@
 
 import React from 'react';
 import YouTube from 'react-youtube';
+//import './App.css';
 
 const Video = ({ videoUrl }) => {
   // Extract video ID from URL (assuming the URL is in the format of YouTube video links)
@@ -26,8 +27,8 @@ const Video = ({ videoUrl }) => {
   };
 
   return (
-    <div className="video">
-      <YouTube videoId={videoId} opts={opts} />
+    <div className="video-container">
+      <YouTube videoId={videoId} opts={opts} className="responsive-video" />
     </div>
   );
 };
