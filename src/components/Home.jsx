@@ -9,10 +9,13 @@ import {
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 const Home = () => {
   return (
     <>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
       <div className="Imgcontainer">
         <img  
           src="https://static.wixstatic.com/media/933a77_a2da40e162714b0486817a20dde314d1~mv2.jpg"
@@ -231,6 +234,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <script>
+  AOS.init();
+</script>
     </>
   );
 };
