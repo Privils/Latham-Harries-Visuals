@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaEnvelope,
   FaPhone,
@@ -9,20 +9,34 @@ import {
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import 'aos/dist/aos.css'; 
-import AOS from 'aos';
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
-      <div className="Imgcontainer">
-        <img  
+      <div
+        className="Imgcontainer"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-easing="ease-in"
+        data-aos-duration="600"
+      >
+        <img
           src="https://static.wixstatic.com/media/933a77_a2da40e162714b0486817a20dde314d1~mv2.jpg"
           alt=""
           className="img"
+          loading="lazy"
         />
-        <div className="imgContent container-fluid">
+        <div
+          className="imgContent container-fluid"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in"
+          data-aos-duration="1500"
+        >
           <div className="intro-text">
             <h1 className="intro text-white">
               Welcome to Latham Harries Visuals
@@ -46,10 +60,17 @@ const Home = () => {
         </div>
       </div>
       <section id="about">
-        <h2 className="About">about</h2>
+        <h2 className="About" data-aos="zoom-in">
+          about
+        </h2>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6">
+            <div
+              className="col-sm-6"
+              data-aos="fade-right"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+            >
               <p className="about-text">
                 Hey there, I'm Latham Harris, a dedicated freelance videographer
                 and photographer deeply passionate about capturing the essence
@@ -65,7 +86,12 @@ const Home = () => {
                 sincerity and truthfulness.
               </p>
             </div>
-            <div className="col-sm-6">
+            <div
+              className="col-sm-6"
+              data-aos="fade-left"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+            >
               <img
                 src="https://wallpapercave.com/wp/wp1809915.png"
                 alt="image of latham"
@@ -78,11 +104,26 @@ const Home = () => {
 
       <section id="services">
         <div className="container">
-          <p className="services">my services</p>
+          <p
+            className="services"
+            data-aos="fade-down"
+            data-aos-easing="ease-in"
+            data-aos-duration="1100"
+          >
+            my services
+          </p>
           <div className="row">
-            <div className="col-sm-6 videographyDiv">
+            <div
+              className="col-sm-6 videographyDiv"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+            >
               <p className="videography">
-              <p className="text-white text-center serviceGraph">videography</p>
+                <p className="text-white text-center serviceGraph">
+                  videography
+                </p>
                 <div className="iconDiv">
                   <FaCamera className="FaCamera" />
                 </div>
@@ -102,9 +143,15 @@ const Home = () => {
                 to the artistry of life itself.
               </p>
             </div>
-            <div className="col-sm-6 photographyDiv">
+            <div
+              className="col-sm-6 photographyDiv"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center"
+            >
               <p className="photography">
-              <p className="text-white text-center serviceGraph">photography</p>
+                <p className="text-white text-center serviceGraph">
+                  photography
+                </p>
                 <div className="iconDiv">
                   <FaCamera className="FaCamera" />
                 </div>
@@ -125,7 +172,7 @@ const Home = () => {
           </div>
         </div>
         <div className="container" id="portfolio">
-          <p className="services">
+          <p className="services" data-aos="zoom-in">
             <span className="services-span">
               Relive your past, present, and future through stunning photos and
               videos.
@@ -134,7 +181,7 @@ const Home = () => {
             Experience high-quality content that captures every moment.
           </p>
           <div className="row flex-wrap work-list">
-            <div className="col-sm-6 work">
+            <div className="col-sm-6 work" data-aos="zoom-in">
               <img
                 src="https://static.wixstatic.com/media/933a77_d2387ecc6eb943c895e5ad14f8a199d5~mv2.jpg/v1/fill/w_769,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSC00405.jpg"
                 alt=""
@@ -146,7 +193,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-sm-6 work">
+            <div className="col-sm-6 work" data-aos="zoom-in">
               <img
                 src="https://static.wixstatic.com/media/933a77_fab060747d514e2786af66dc33a16f53~mv2.jpg/v1/fill/w_536,h_470,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/933a77_fab060747d514e2786af66dc33a16f53~mv2.jpg"
                 alt=""
@@ -158,7 +205,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-sm-6 work">
+            <div className="col-sm-6 work" data-aos="zoom-in">
               <img
                 src="https://static.wixstatic.com/media/933a77_24cde6ff545e4fc6bbefae999d11f659~mv2.jpg/v1/fill/w_617,h_470,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/933a77_24cde6ff545e4fc6bbefae999d11f659~mv2.jpg"
                 alt=""
@@ -174,10 +221,12 @@ const Home = () => {
         </div>
       </section>
       <section id="contact">
-        <h1 className="contact">Get in Touch</h1>
+        <h1 className="contact" data-aos="fade-down">
+          Get in Touch
+        </h1>
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="zoom-in-up">
               <p class="contact-info">
                 <FaEnvelope className="net-Icons" />
                 <Link to="Photography@lathamharris.com">
@@ -199,7 +248,7 @@ const Home = () => {
                 </Link>
               </p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="zoom-in-up">
               <form className="form">
                 <label htmlFor="first-name">
                   First Name <br />
@@ -234,9 +283,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <script>
-  AOS.init();
-</script>
     </>
   );
 };

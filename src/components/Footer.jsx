@@ -17,7 +17,7 @@ const Footer = () => {
    <div className="footer">
     <div className="container">
         <div className="row">
-            <div className="col-sm-12">
+            <div className="col-sm-12"> 
             <p class="copy-write">
       &copy;(2024)PrivilsWebDev. All Rights Reserved <FaHeart className='text-primary'/>
     </p>

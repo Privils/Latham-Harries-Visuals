@@ -14,7 +14,7 @@ body{
 /*--------------------------------------------nav styles---------------------------------------*/
 nav{
   background: #000;
-  height: 100px;
+  height: 60px;
 }
 .container-fluid ul li a{
   width: 100px;
@@ -44,11 +44,12 @@ nav{
   height: 800px;
   position: relative;
   margin-bottom: 19px;
+
 }
 .img{
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
+width: 100%;
+height: 800px;
+object-fit: cover;
 }
 .imgContent{
   position: absolute;
