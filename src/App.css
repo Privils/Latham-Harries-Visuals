@@ -1,38 +1,351 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(0, 0, 0);
+  color: #fff;
+  font-family: "Gupter", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*--------------------------------------------nav styles---------------------------------------*/
+nav{
+  background: #000;
+  height: 100px;
+}
+.container-fluid ul li a{
+  width: 100px;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 5px;
   text-align: center;
+  text-transform: capitalize;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-fluid ul li a:hover{
+  border: 2px solid white;
+  border-radius: 5px;
+  transform: scale(1.1);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand, .offcanvas-title{
+  text-transform: capitalize;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.closeIcon{
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-right: 7px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/*-------------------------------------------home styles-------------------------------------------*/
+.Imgcontainer{
+  width: 100%;
+  height: 800px;
+  position: relative;
+  margin-bottom: 19px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.img{
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.imgContent{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro{
+  text-transform: capitalize;
+  font-size: 3.5em;
   }
-  to {
-    transform: rotate(360deg);
+  .italic{
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 1.5em;
+  }
+  .intro-text{
+    width: fit-content;
+    padding: 5%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+  }
+  .intro-links{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn{
+    border: 2px solid rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 160px;
+  }
+  .btn a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .btn:hover{
+    border: 3px solid rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    color: #ff0000;
+  }
+
+ /*-----------------------------------------about---------------------------------------*/
+ #about{
+  margin-top: 40px;
+  }
+  .About, .contact{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3.9em;
+    font-weight: 400;
+    padding: 3%;
+  }
+    /*-------------------------------------------------------------portfolio---------------------------------------------*/
+    .services{
+      text-align: center;
+      font-size: 3em;
+      text-transform: capitalize;
+      padding: 3%;
+      margin: 10px;
+      font-weight: 400;
+    }
+    .iconDiv{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .FaCamera{
+      color: rgb(21, 0, 255);
+      font-size: 3em;
+      padding: 4px;
+      margin: 6px;
+    }
+    .videography, .photography{
+      background: #262626;
+      border-radius: 10px;
+      font-size: 16px;
+      margin: 10px;
+      padding: 25px;
+    }
+    .videography:hover, .photography:hover{
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #16cfe787);
+      transform: translateY(-10px);
+      margin: 10px;
+    }
+    .serviceGraph{
+      font-size: 1.5em;
+      text-transform: capitalize;
+    }
+    
+    /*------------------------------------------------------------------projects------------------------------------------------------------------------*/
+    .work-list{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      margin-top: 50px;
+    }
+    .work{
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    
+    }
+    .work img{
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      transition: transform 0.5s;
+    }
+    .layer{
+      width: 100%;
+      height: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), #1ecbe1);
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 40px;
+      text-align: center;
+      font-size: 14px;
+      transition: height 0.5s;
+    }
+    .layer h3{
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    .layer a{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      color: #ff004f;
+      text-decoration: none;
+      line-height: 16px;
+      background: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      align-items: center;
+    }
+    .services-span{
+      color: #ff0048;
+      font-size: 19px;
+    }
+    .layer a .FaExternalLinkAlt{
+      font-size: 25px;
+    }
+    .work:hover img{
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .work:hover .layer{
+      height: 100%;
+    }
+      /*----------------------------------------contact------------------------------*/
+  #contact{
+    margin-top: 15vh;
+  }
+  .contact-info a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ff00bb;
+  } 
+  .net-Icons{
+    font-size: 35px;
+    margin: 10px;
+  }
+  .net-Icons:hover{
+    color: #ff0048;
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+  label{
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+  }
+  #first-name, #last-name, #email, #phone{
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #fff;
+    text-transform: capitalize;
+  }
+  .text-area-header{
+    margin-top: 15px;
+  }
+  #text-area{
+    margin: 2px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #fff;
+  }
+  #text-area{
+    margin: 2px;
+    width: 100%;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #fff;
+  color: #fff;
+  }
+  #text-area:hover, #first-name:hover, #last-name:hover, #email:hover, #phone:hover{
+  border: 2px solid #fff;
+  cursor: pointer;
+  }
+  .fromBtn{
+    width: 200px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 6px;
+    margin: 12px;
+    border-radius: 8px;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .fromBtn:hover{
+    background: #fff;
+    border: 2px solid #3a4443;
+    color: #000;
+  }
+ /*-------------------------------------------------club pictures--------------------------------------------------------*/
+  
+ .col-sm-3{
+  margin: 10px;
+
+}
+.clubImages{
+width: 100%;
+height: 100%;
+object-fit: contain;
+padding: 5px;
+}
+.stretch{
+width: fit-content;
+}
+ .clubImageStretch{
+width: 610px;
+
+}
+.text-custom {
+  color: #ff003c; /* Example custom color */
+}
+.clubText{
+  font-size: 20px;
+}
+  /*-------------------------------------------------events---------------------------------------------------------*/
+  
+  .events{
+    width: fit-content;
+    height: auto;
+    }
+    .eventsImages{
+      width: 400px;
+      height: 500px;
+    }
+
+
+    /*----------------------------------sports------------------------------------*/
+    .intro-videos{
+      text-align: center;
+    }
+    /*----------------------footer------------------*/
+    .copy-write{
+      font-size: 20px;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+@media (max-width: 768px) {
+  .btn{
+    border: 2px solid rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 100px;
+    margin: 5px;
   }
 }
