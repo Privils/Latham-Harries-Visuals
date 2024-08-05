@@ -14,13 +14,12 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route index element={<Home/>}/>
-        <Route path='/' element={<Home />} />
-        <Route path='/Events' element={<Events />} />
-        <Route path='/Sports' element={<Sports />} />
-        <Route path='/ClubPic' element={<ClubPic />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Events" element={<Events />} />
+        <Route path="/Sports" element={<Sports />} />
+        <Route path="/ClubPic" element={<ClubPic />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
