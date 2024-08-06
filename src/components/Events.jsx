@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { useNavigate } from "react-router";
+import { FaHome } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   useEffect(() => {
@@ -14,6 +17,9 @@ const Events = () => {
         data-aos-easing="ease-in"
         data-aos-duration="1000"
       >
+          <Link to="/Latham-Harries-Visuals">
+        <FaHome className="FaHome"/>
+        </Link>
         <h1
           className="intro text-center"
           data-aos="zoom-in"

@@ -4,20 +4,33 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Video from "../components/Video";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { useNavigate } from "react-router";
+import { FaHome } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Sports = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/');
+  };
   useEffect(() => {
     AOS.init();
   }, []);
   const videoUrl = "https://www.youtube.com/watch?v=3XjICtvRCwA";
   return (
     <>
+    
       <section
         className="clubs"
         data-aos="fade"
         data-aos-easing="ease-in"
         data-aos-duration="1000"
       >
+        <Link to="/Latham-Harries-Visuals">
+        <FaHome className="FaHome"/>
+        </Link>
+       
         <h1 className="intro text-center" data-aos="zoom-in">
           sport photos
         </h1>
@@ -27,7 +40,7 @@ const Sports = () => {
           your family by your side.{" "}
           <span className="text-custom">Capture each cherished </span> memory{" "}
           <span className="text-custom">not just in </span> photos, but in
-          videos <span className="text-custom"> too, ensuring </span> you can
+          videos <span className="text-custom"> too,ensuring </span> you can
           always <span className="text-custom">reminisce </span> about your
           glory <span className="text-custom">days </span> with vivid{" "}
           <span className="text-custom">clarity.</span>

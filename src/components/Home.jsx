@@ -18,47 +18,47 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div
-        className="Imgcontainer"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-        data-aos-easing="ease-in"
-        data-aos-duration="600"
-      >
-        <img
-          src="https://static.wixstatic.com/media/933a77_a2da40e162714b0486817a20dde314d1~mv2.jpg"
-          alt=""
-          className="img"
-          loading="lazy"
-        />
+      <section className="top">
         <div
-          className="imgContent container-fluid"
-          data-aos="fade-zoom-in"
+          className="Imgcontainer"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
           data-aos-easing="ease-in"
-          data-aos-duration="1500"
+          data-aos-duration="600"
         >
-          <div className="intro-text">
-            <h1 className="intro text-white">
-              Welcome to Latham Harries Visuals
-            </h1>
-            <p className="italic text-white">
-              Transforming moments into masterpieces.
-            </p>
-            <div className="intro-links">
-              <button className="btn text-white">
-                <Link to="../Sports">Sports</Link>
-              </button>
-              <button className="btn text-white">
-                <Link to="../Events">events</Link>
-              </button>
-              <button className="btn text-white">
-                {" "}
-                <Link to="../ClubPic">club</Link>{" "}
-              </button>
+          <img
+            src="https://static.wixstatic.com/media/933a77_a2da40e162714b0486817a20dde314d1~mv2.jpg"
+            alt=""
+            className="img"
+            loading="lazy"
+          />
+          <div
+            className="imgContent"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in"
+            data-aos-duration="1500"
+          >
+            <div className="intro-text">
+              <h1 className="intro">Welcome to Latham Harries Visuals</h1>
+              <p className="italic text-white">
+                Transforming moments into masterpieces.
+              </p>
+              <div className="intro-links">
+                <button className="btn text-white">
+                  <Link to="../Sports">Sports</Link>
+                </button>
+                <button className="btn text-white">
+                  <Link to="../Events">events</Link>
+                </button>
+                <button className="btn text-white">
+                  {" "}
+                  <Link to="../ClubPic">club</Link>{" "}
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section id="about">
         <h2 className="About" data-aos="zoom-in">
           about
@@ -101,7 +101,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section id="services">
         <div className="container">
           <p
@@ -143,6 +142,7 @@ const Home = () => {
                 to the artistry of life itself.
               </p>
             </div>
+
             <div
               className="col-sm-6 photographyDiv"
               data-aos="fade-up"
@@ -171,7 +171,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container" id="portfolio">
+      </section>
+      <section id="portfolio">
+        <div className="container">
           <p className="services" data-aos="zoom-in">
             <span className="services-span">
               Relive your past, present, and future through stunning photos and
@@ -185,6 +187,7 @@ const Home = () => {
               <img
                 src="https://static.wixstatic.com/media/933a77_d2387ecc6eb943c895e5ad14f8a199d5~mv2.jpg/v1/fill/w_769,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSC00405.jpg"
                 alt=""
+                className="img-fluid"
               />
               <div className="layer">
                 <h3>clubs</h3>
@@ -197,6 +200,7 @@ const Home = () => {
               <img
                 src="https://static.wixstatic.com/media/933a77_fab060747d514e2786af66dc33a16f53~mv2.jpg/v1/fill/w_536,h_470,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/933a77_fab060747d514e2786af66dc33a16f53~mv2.jpg"
                 alt=""
+                className="img-fluid"
               />
               <div className="layer">
                 <h3>events</h3>
@@ -209,6 +213,7 @@ const Home = () => {
               <img
                 src="https://static.wixstatic.com/media/933a77_24cde6ff545e4fc6bbefae999d11f659~mv2.jpg/v1/fill/w_617,h_470,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/933a77_24cde6ff545e4fc6bbefae999d11f659~mv2.jpg"
                 alt=""
+                className="img-fluid"
               />
               <div className="layer">
                 <h3>sports</h3>
@@ -224,9 +229,9 @@ const Home = () => {
         <h1 className="contact" data-aos="fade-down">
           Get in Touch
         </h1>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6" data-aos="zoom-in-up">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6" data-aos="zoom-in-up">
               <p class="contact-info">
                 <FaEnvelope className="net-Icons" />
                 <Link to="Photography@lathamharris.com">
@@ -248,31 +253,37 @@ const Home = () => {
                 </Link>
               </p>
             </div>
-            <div class="col-sm-6" data-aos="zoom-in-up">
+            <div className="col-sm-6" data-aos="zoom-in-up">
               <form className="form">
-                <label htmlFor="first-name">
-                  First Name <br />
-                  <input
-                    type="text"
-                    id="first-name"
-                    name="first-name"
-                    required
-                  />
+                <label htmlFor="first-Name">
+                  first name <br />
+                  <input type="text" id="first-name" required />
                 </label>
                 <label htmlFor="last-name">
-                  Last Name <br />
+                  last name
+                  <br />
                   <input type="text" id="last-name" name="last-name" required />
                 </label>
                 <label htmlFor="email">
-                  Email <br />
+                  {" "}
+                  email
+                  <br />
                   <input type="email" id="email" name="email" required />
                 </label>
                 <label htmlFor="phone">
-                  Phone <br />
+                  phone
+                  <br />
                   <input type="tel" id="phone" name="phone" required />
                 </label>
-                <p className="text-area-header">Leave a message</p>
-                <textarea id="text-area" rows="5" cols="71"></textarea>
+                <label htmlFor="text-area">
+                  Leave a message <br />
+                  <textarea
+                    class="form-control custom-textarea text-white"
+                    id="responsiveTextarea"
+                    rows="6"
+                    cols="70"
+                  ></textarea>
+                </label>
                 <div className="formBtn">
                   <button type="submit" className="fromBtn">
                     Submit

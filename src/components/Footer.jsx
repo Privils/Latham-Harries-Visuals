@@ -1,4 +1,6 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import {
     FaEnvelope,
     FaPhone,
@@ -8,23 +10,17 @@ import {
     FaHeart
   } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import "../App.css";
   
 
 const Footer = () => {
   return (
    <>
-   <hr />
-   <div className="footer">
-    <div className="container">
-        <div className="row">
-            <div className="col-sm-12"> 
-            <p class="copy-write">
+ <div className='my-4'>
+ <p class="copy-write text-center">
       &copy;(2024)PrivilsWebDev. All Rights Reserved <FaHeart className='text-primary'/>
     </p>
-            </div>
-        </div>
-    </div>
-   </div>
+ </div>
    </>
   )
 }

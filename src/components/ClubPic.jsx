@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { useNavigate } from "react-router";
+import { FaHome } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ClubPic = () => {
   useEffect(() => {
@@ -16,6 +19,9 @@ const ClubPic = () => {
         data-aos-easing="ease-in"
         data-aos-duration="1000"
       >
+          <Link to="/Latham-Harries-Visuals">
+        <FaHome className="FaHome"/>
+        </Link>
         <h1
           className="intro text-center"
           data-aos="zoom-in"
