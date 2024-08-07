@@ -7,7 +7,7 @@ import "../App.css";
 const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-md navbar-light navbar-fluid">
+      <nav className="navbar navbar-expand-md navbar-light navbar-fluid fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand text-white" href="/Latham-Harries-Visuals">
             Latham Harris
