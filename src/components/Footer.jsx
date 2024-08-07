@@ -16,8 +16,8 @@ import "../App.css";
 const Footer = () => {
   return (
    <>
- <div className='my-4 bg-red container-fluid d-flex'>
- <p class="copy-write text-center bg-red">
+ <div className='my-4 container-fluid'>
+ <p class="copy-write text-center">
       &copy;(2024)PrivilsWebDev. All Rights Reserved <FaHeart className='text-primary'/>
     </p>
  </div>

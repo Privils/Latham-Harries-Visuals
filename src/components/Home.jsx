@@ -26,24 +26,27 @@ const Home = () => {
           data-aos-easing="ease-in"
           data-aos-duration="600"
         >
-          <img
+             
+             <img
             src="https://static.wixstatic.com/media/933a77_a2da40e162714b0486817a20dde314d1~mv2.jpg"
             alt=""
-            className="img"
+            className="img img-fluid"
             loading="lazy"
           />
+
+
           <div
             className="imgContent"
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in"
             data-aos-duration="1500"
           >
-            <div className="intro-text">
+            <div className="intro-text container-fluid">
               <h1 className="intro">Welcome to Latham Harries Visuals</h1>
               <p className="italic text-white">
                 Transforming moments into masterpieces.
               </p>
-              <div className="intro-links">
+              <div className="intro-links container">
                 <button className="btn text-white">
                   <Link to="../Sports">Sports</Link>
                 </button>
