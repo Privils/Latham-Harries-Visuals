@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Latham-Harries-Visuals/static/css/main.b7bf4b26.css",
-    "main.js": "/Latham-Harries-Visuals/static/js/main.1d343bfb.js",
+    "main.css": "/Latham-Harries-Visuals/static/css/main.02268959.css",
+    "main.js": "/Latham-Harries-Visuals/static/js/main.31f4cd89.js",
     "index.html": "/Latham-Harries-Visuals/index.html",
-    "main.b7bf4b26.css.map": "/Latham-Harries-Visuals/static/css/main.b7bf4b26.css.map",
-    "main.1d343bfb.js.map": "/Latham-Harries-Visuals/static/js/main.1d343bfb.js.map"
+    "main.02268959.css.map": "/Latham-Harries-Visuals/static/css/main.02268959.css.map",
+    "main.31f4cd89.js.map": "/Latham-Harries-Visuals/static/js/main.31f4cd89.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7bf4b26.css",
-    "static/js/main.1d343bfb.js"
+    "static/css/main.02268959.css",
+    "static/js/main.31f4cd89.js"
   ]
 }
