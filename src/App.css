@@ -383,6 +383,7 @@ a .FaHome:hover{
     }
     .footer{
 text-align: center;
+background-color: red;
     }
 @media (max-width: 768px) {
   .btn{
@@ -395,5 +396,18 @@ text-align: center;
   .Video{
     overflow: hidden;
     display: none;
+  }
+  .custom-textarea{
+    border: 3px solid white;
+    width: 85%;
+  }
+
+} 
+@media (max-width: 375px) {
+  .my-4{
+    width: 250px;
+  }
+  nav{
+    width: 330px;
   }
 }

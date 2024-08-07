@@ -20,7 +20,7 @@ root.render(
       <Route path='/Sports' element={<Sports/>}/>
       <Route path='/ClubPic' element={<ClubPic/>}/>
     </Routes>
-      <Footer />
+    <Footer />
    </Router>
   </React.StrictMode>
 );
