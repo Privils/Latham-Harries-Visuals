@@ -55,7 +55,7 @@ const Home = () => {
                 </button>
                 <button className="btn text-white">
                   {" "}
-                  <Link to="../ClubPic">club</Link>{" "}
+                  <Link to="../ClubPics">club</Link>{" "}
                 </button>
               </div>
             </div>
@@ -194,7 +194,7 @@ const Home = () => {
               />
               <div className="layer">
                 <h3>clubs</h3>
-                <Link to="../ClubPic">
+                <Link to="../ClubPics">
                   <FaExternalLinkAlt className="FaExternalLinkAlt" />
                 </Link>
               </div>

@@ -7,7 +7,6 @@ import { useNavigate } from "react-router";
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
 const ClubPics = () => {
   useEffect(() => {
     AOS.init();
