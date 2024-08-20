@@ -1,24 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Events from './components/Events';
 import Sports from './components/Sports';
-import ClubPic from './components/ClubPic';
+import ClubPics from './components/ClubPics';
+import './index.css'
 
 function App() {
   return (
    <>
-   <Router>
+   <Router basename='/Latham-Harries-Visuals'>
    <Header/>
    <Routes>
      <Route index element={<Home/>}/>
      <Route path='/' element={<Home/>}/>
      <Route path='/Events' element={<Events/>}/>
       <Route path='/Sports' element={<Sports/>}/>
-      <Route path='/ClubPic' element={<ClubPic/>}/>
-   </Routes>
+      <Route path='/ClubPics' element={<ClubPics/>}/>
+   </Routes> 
    </Router>
    </>
   );

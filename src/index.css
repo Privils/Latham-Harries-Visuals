@@ -16,6 +16,7 @@ nav{
   background: #000;
   padding: 4%;
   position: fixed;
+  height: 100px;
 }
 .container-fluid ul li a{
   width: 100px;
@@ -42,6 +43,12 @@ nav{
   font-weight: bolder;
   margin-right: 7px;
   color: white;
+}
+#navbarNav ul li a{
+color: white;
+}
+.logo{
+    font-size: 30px;
 }
 /*-------------------------------------------home styles-------------------------------------------*/
 .Imgcontainer{
@@ -129,12 +136,16 @@ object-fit: cover;
       width: 100%;
       display: flex;
       justify-content: center;
-    }
+    } 
     .FaCamera{
-      color: rgb(21, 0, 255);
+      color: #fffffff8;
       font-size: 3em;
       padding: 4px;
       margin: 6px;
+    }
+    .FaCamera:hover{
+        cursor: pointer;
+        color: #ff0048;
     }
     .videography, .photography{
       background: #262626;

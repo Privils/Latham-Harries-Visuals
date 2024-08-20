@@ -16,7 +16,7 @@ const Header = () => {
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link btn-danger" href="index.html">Home</a>
+              <a class="nav-link btn-danger" href="/Latham-Harries-Visuals">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">about us</a>
