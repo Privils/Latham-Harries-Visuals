@@ -5,20 +5,30 @@ import {
   FaInstagram,
   FaExternalLinkAlt,
   FaCamera,
+  FaUpload
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "aos/dist/aos.css";
 import AOS from "aos";
+//import { FaArrowUpFromBracket } from 'react-icons/fa';
 
 const Home = () => {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', 
+    });
+  }
+  
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <>
       <section className="top">
+       < FaUpload id="float" onClick={scrollToTop}/>
         <div
           className="Imgcontainer"
           data-aos="fade-up"

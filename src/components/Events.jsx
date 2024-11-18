@@ -21,9 +21,6 @@ const Events = () => {
         data-aos-easing="ease-in"
         data-aos-duration="1000"
       >
-          <Link to="/Latham-Harries-Visuals">
-        <FaHome className="FaHome"/>
-        </Link>
         <h1
           className="intro text-center"
           data-aos="zoom-in"
